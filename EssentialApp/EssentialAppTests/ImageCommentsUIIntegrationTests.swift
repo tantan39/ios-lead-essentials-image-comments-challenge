@@ -163,7 +163,7 @@ class ImageCommentsUIIntegrationTests: XCTestCase {
 		return (sut, loader)
 	}
 
-	func makeComment(message: String = "any message", username: String = "any username") -> ImageComment {
+	private func makeComment(message: String = "any message", username: String = "any username") -> ImageComment {
 		return ImageComment(id: UUID(), message: message, createdAt: Date(), username: username)
 	}
 
